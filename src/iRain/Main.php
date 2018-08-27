@@ -37,7 +37,7 @@ class Main extends PluginBase implements Listener {
 		$this->saveDefaultConfig();
 	}
 
-	public function onCommand(CommandSender $sender, Command $cmd, $label, array $args) : bool
+	public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool
 	{
 		$time = time();
 		$date = date('Y-m-d');
