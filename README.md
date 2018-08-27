@@ -4,7 +4,7 @@ This is a very useful plugin, it totally add a lot of features to your server su
 
 /kit test (gives you 100 diamonds and 100 stone)
 
-/ctime (which just shows a big ass number that makes no sense what so ever) (will fix later)
+/ctime (outputs the current time.)
 
 /cdate (shows current date)
 
