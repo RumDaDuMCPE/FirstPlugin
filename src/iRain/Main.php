@@ -39,12 +39,12 @@ class Main extends PluginBase implements Listener {
 
 	public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool
 	{
-		$time = time();
+		$time = date("h:i:s a");
 		$date = date('Y-m-d');
 		if ($sender instanceof Player) {
 			switch ($command->getName()) {
 				case "ctime":
-					$sender->sendMessage(Main::PREFIX . TextFormat::RED  . TextFormat::BOLD . "THE TIME IS " . $time);
+					$sender->sendMessage(Main::PREFIX . TextFormat::RED  . TextFormat::BOLD . "THE TIME IS " . $time . ".");
 					return true;
 				case "iraindrop":
 					$sender->sendMessage(Main::PREFIX . TextFormat::RED . TextFormat::BOLD . "THIS PLUGIN IS MADE BY @IRAINDROP_ (THAT IS MY TWITTER)");
