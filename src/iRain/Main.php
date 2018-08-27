@@ -42,7 +42,7 @@ class Main extends PluginBase implements Listener {
 		$time = time();
 		$date = date('Y-m-d');
 		if ($sender instanceof Player) {
-			switch ($cmd->getName()) {
+			switch ($command->getName()) {
 				case "ctime":
 					$sender->sendMessage(Main::PREFIX . TextFormat::RED  . TextFormat::BOLD . "THE TIME IS " . $time);
 					return true;
